@@ -633,14 +633,22 @@ holywell_modifier = {
 
 mount_athos_modifier = {
 	global_missionary_strength = 0.01
-  prestige = 0.4
+    prestige = 0.4
 	picture = "mount_athos_icon"
 }
 
 santiago_de_compostella_modifier = {
 	global_missionary_strength = 0.01
-  prestige = 0.4
+    prestige = 0.4
 	picture = "santiago_de_compostella_icon"
+}
+
+cinnamon_valleys_of_mount_kerinci_modifier = {
+	production_efficiency = 0.15
+	global_trade_goods_size_modifier = 0.15
+	trade_goods_size = 2
+	prestige = 0.4
+	picture = "mount_kerinci_icon"
 }
 
 #stonehenge_modifier = {

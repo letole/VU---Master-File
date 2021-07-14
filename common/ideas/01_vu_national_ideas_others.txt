@@ -1349,43 +1349,6 @@ SUL_ideas = {
 	}
 }
 
-MAJ_ideas = {
-	start = {
-		naval_forcelimit_modifier = 0.25
-		prestige_decay = -0.01	
-	}
-	bonus = {
-		naval_maintenance_modifier = -0.2
-	}
-	trigger = {
-		tag = MAJ
-	}
-	free = yes
-	
-	maj_imperialism = {
-		vassal_income = 0.15
-	}
-	candi_shrines = {
-		religious_unity = 0.20
-	}
-	maj_muslim_trading_ports = {
-		global_prov_trade_power_modifier = 0.20
-		tolerance_heathen = 1
-	}
-	modernized_shipbuilding = {
-		global_ship_cost = -0.10
-	}
-	terracotta_banking = {
-		trade_efficiency = 0.15
-	}
-	maj_naval = {
-		naval_morale = 0.2
-	}
-	restored_empire_maj = {
-		prestige = 1
-	}
-}
-
 SUN_ideas = {
 	start = {
 		tolerance_own = 2

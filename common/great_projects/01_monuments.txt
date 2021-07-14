@@ -40,6 +40,10 @@ hagia_sophia = {
 				religion_group = muslim
 				has_owner_religion = yes
 			}
+			AND = {
+				religion = catholic
+				has_owner_religion = yes
+			}
 		}
 	}
 
@@ -77,6 +81,10 @@ hagia_sophia = {
 				religion_group = muslim
 				has_owner_religion = yes
 			}
+			AND = {
+				religion = catholic
+				has_owner_religion = yes
+			}
 		}
 	}
 
@@ -93,6 +101,10 @@ hagia_sophia = {
 			}
 			AND= {
 				religion_group = muslim
+				has_owner_religion = yes
+			}
+			AND = {
+				religion = catholic
 				has_owner_religion = yes
 			}
 		}
@@ -185,7 +197,8 @@ hagia_sophia = {
 			tolerance_own = 0.5
 			tolerance_heretic = 0.5
 			monthly_piety = 0.001
-			yearly_patriarch_authority = 0.001
+			yearly_patriarch_authority = 0.002
+			papal_influence = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -221,7 +234,8 @@ hagia_sophia = {
 			tolerance_own = 1
 			tolerance_heretic = 1
 			monthly_piety = 0.002
-			yearly_patriarch_authority = 0.002
+			yearly_patriarch_authority = 0.005
+			papal_influence = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -3424,7 +3438,7 @@ tenochtitlan = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_development_cost = -0.05
+			local_local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -3791,7 +3805,7 @@ shwedagon_pagoda = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_unrest = -2
-			local_development_cost = -0.05
+			local_local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -7450,7 +7464,7 @@ prambanan_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.05
+			local_development_cost = -0.05
 			global_missionary_strength = 0.01
 		}
 
@@ -7480,7 +7494,7 @@ prambanan_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.10
+			local_development_cost = -0.10
 			global_missionary_strength = 0.02
 			missionaries = 1
 		}
@@ -8983,11 +8997,7 @@ walls_of_theodosius = {
 	build_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-			}
-			AND = {
-				religion = coptic
+				religion_group = christian
 				has_owner_religion = yes
 			}
 			AND= {
@@ -9010,11 +9020,7 @@ walls_of_theodosius = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-			}
-			AND = {
-				religion = coptic
+				religion_group = christian
 				has_owner_religion = yes
 			}
 			AND= {
@@ -9028,11 +9034,7 @@ walls_of_theodosius = {
 	can_upgrade_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-			}
-			AND = {
-				religion = coptic
+				religion_group = christian
 				has_owner_religion = yes
 			}
 			AND= {
@@ -9122,7 +9124,7 @@ walls_of_theodosius = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 		    defensiveness = 0.15
-			hostile_attrition = 15
+			hostile_attrition = 1.5
 			garrison_size = 0.15
 		}
 
@@ -13556,6 +13558,159 @@ universita_di_bologna = {
     }
 }
 
+oxford_university = {
+    start = 237
+    
+    date = 1096.01.01
+    
+    time = {
+        months = 0
+    }
+    
+    build_cost = 0
+    
+    can_be_moved = no
+    
+    move_days_per_unit_distance = 10
+    
+    starting_tier = 0
+    
+    type = monument
+
+    build_trigger = {
+        culture_group = british
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}	
+    }
+
+    on_built = {
+    }
+    
+    on_destroyed = {
+    }
+
+    can_use_modifiers_trigger = {
+        culture_group = british
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}		
+    }
+
+    can_upgrade_trigger = {
+		culture_group = british
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}	
+    }
+
+    keep_trigger = {
+    }
+
+   tier_0 = {			#needs to be completely changed!!!!
+        upgrade_time = {
+            months = 0
+        }
+
+        cost_to_upgrade = {
+            factor = 0
+        }
+
+        province_modifiers = {
+        }
+
+        area_modifier = {
+        }
+
+        country_modifiers = {
+        }
+
+        on_upgraded = {
+        }
+    }
+
+    tier_1 = {
+        upgrade_time = {
+            months = 120
+        }
+
+        cost_to_upgrade = {
+            factor = 4000
+        }
+
+        province_modifiers = {
+        }
+
+        area_modifier = {
+		    local_unrest = 0.5 #independent thought = more unrest
+        }
+
+        country_modifiers = {
+		    idea_cost = -0.0125 #free thinkers and the like would reduce idea cost
+			advisor_cost = -0.0125 #more smart people = lower price for smart people
+			innovativeness_gain = 0.125 #always been pretty forward thinking (might be OP stacked with Anglican but once you're capped you're capped!)
+        }
+
+        on_upgraded = {
+        }
+    }
+	
+	tier_2 = {
+        upgrade_time = {
+            months = 240
+        }
+
+        cost_to_upgrade = {
+            factor = 6000
+        }
+
+        province_modifiers = {
+        }
+
+        area_modifier = {
+		    local_unrest = 1
+        }
+
+        country_modifiers = {
+		    idea_cost = -0.025 #free thinkers and the like would reduce idea cost
+			advisor_cost = -0.025 #more smart people = lower price for smart people
+			innovativeness_gain = 0.25 #always been pretty forward thinking (might be OP stacked with Anglican but once you're capped you're capped!)
+		}
+
+        on_upgraded = {
+        }
+    }
+	
+	tier_3 = {
+        upgrade_time = {
+            months = 480
+        }
+
+        cost_to_upgrade = {
+            factor = 8000
+        }
+
+        province_modifiers = {
+        }
+
+        area_modifier = {
+		    local_unrest = 1.5
+        }
+
+        country_modifiers = {
+		    idea_cost = -0.05 #free thinkers and the like would reduce idea cost
+			advisor_cost = -0.05 #more smart people = lower price for smart people
+			innovativeness_gain = 0.5 #always been pretty forward thinking (might be OP stacked with Anglican but once you're capped you're capped!)
+        }
+
+        on_upgraded = {
+        }
+    }
+}
+
 sorbonne_university = {
     start = 7960
     
@@ -14572,20 +14727,11 @@ boston = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
     }
 
     can_upgrade_trigger = {
-		culture_group = british
-		is_year = 1630
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -14626,16 +14772,19 @@ boston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -14656,17 +14805,19 @@ boston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -14687,17 +14838,20 @@ boston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -14740,20 +14894,11 @@ havana = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = iberian
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
     }
 
     can_upgrade_trigger = {
-	    is_year = 1519
-		culture_group = iberian
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -14794,16 +14939,19 @@ havana = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -14824,17 +14972,19 @@ havana = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -14855,17 +15005,20 @@ havana = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -14907,21 +15060,12 @@ charleston = {
     on_destroyed = {
     }
 
-    can_use_modifiers_trigger = {
-	    culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+   can_use_modifiers_trigger = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1670
-		culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -14962,16 +15106,19 @@ charleston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -14992,17 +15139,19 @@ charleston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -15023,17 +15172,20 @@ charleston = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -15411,21 +15563,12 @@ new_orleans = {
     on_destroyed = {
     }
 
-    can_use_modifiers_trigger = {
-	    culture_group = french
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+   can_use_modifiers_trigger = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1718
-		culture_group = french
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -15466,16 +15609,19 @@ new_orleans = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -15496,17 +15642,19 @@ new_orleans = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -15527,17 +15675,20 @@ new_orleans = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -15580,20 +15731,11 @@ new_york = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
     }
 
     can_upgrade_trigger = {
-	    is_year = 1624
-		culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -15634,16 +15776,19 @@ new_york = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -15664,17 +15809,19 @@ new_york = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -15695,17 +15842,20 @@ new_york = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -16755,20 +16905,11 @@ quebec = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = french
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
     }
 
     can_upgrade_trigger = {
-		culture_group = french
-		is_year = 1608
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		development = 30
+		province_has_center_of_trade_of_level = 3 #you're not gonna build a monumental harbour if your current is trash!
     }
 
     keep_trigger = {
@@ -16809,16 +16950,19 @@ quebec = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.063
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			trade_efficiency = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -16839,17 +16983,19 @@ quebec = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.125
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			trade_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -16870,17 +17016,20 @@ quebec = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_defensiveness = 0.25 #harder to siege if you can sail supplies in!
+			province_trade_power_value = 20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			trade_efficiency = 0.1
+			merchants = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -19302,91 +19451,74 @@ casa_de_contratacion = {
         }
     }
 
-    tier_1 = {
+	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 120
 		}
-
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 3000
+			factor = 1000
 		}
-
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
 		}
-
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 		}
-
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			colonist_placement_chance = 0.10
 		}
-
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
-
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 240
 		}
-
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 2500
 		}
-
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 		}
-
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
 		}
-
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
-			prestige = 0.25
+			colonist_placement_chance = 0.10
+			range = 0.15
 		}
-
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
-
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
 			months = 480
 		}
-
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
-
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 		}
-
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
 		}
-
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.5
-			prestige = 0.5
+			colonist_placement_chance = 0.10
+			range = 0.15
+			global_tariffs = 0.15
+			treasure_fleet_income = 0.15
 		}
 
 		#what effects happen when this tier is achieved

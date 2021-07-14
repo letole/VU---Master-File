@@ -20,6 +20,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -75,6 +79,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -134,6 +142,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -189,6 +201,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -248,6 +264,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -305,6 +325,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -360,6 +384,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -420,6 +448,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -484,6 +516,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -578,6 +614,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -655,6 +695,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -709,6 +753,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -756,6 +804,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal
@@ -925,6 +977,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 3
+			has_construction = ludwig_canal
+		}
+		modifier = {
+			factor = 3
 			has_construction = don_and_volga_canal
 		}
 		modifier = {
@@ -984,6 +1040,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 3
+			has_construction = ludwig_canal
+		}
 		modifier = {
 			factor = 3
 			has_construction = don_and_volga_canal

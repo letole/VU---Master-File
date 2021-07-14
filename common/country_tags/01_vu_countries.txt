@@ -649,6 +649,9 @@ WLP = "countries/Warlpiri.txt"
 #YZW = "countries/HawaiiNation.txt"
 YZZ = "countries/Kalaallisut.txt"
 
+#VU - Pacific by San Felipe
+RAP = "countries/Rapanui.txt"
+
 #############
 # BTP Notes #
 #############

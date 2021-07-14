@@ -231,7 +231,7 @@ apiculture = {
 		global_supply_limit_modifier = 0.10
 	}
 	province = {
-		attrition = -1
+		attrition = 1
 	}
 	chance = {
 		factor = 10
@@ -2247,7 +2247,7 @@ sweet_confectioneries = {
 		global_unrest = -1.5
 	}
 	province = {
-		culture_conversion_cost = -0.15
+		local_culture_conversion_cost = -0.15
 	}
 }
 
@@ -2257,7 +2257,7 @@ chocolates = {
 		global_unrest = -3
 	}
 	province = {
-		culture_conversion_cost = -0.30
+		local_culture_conversion_cost = -0.30
 	}
 	chance = {
 		factor = 10

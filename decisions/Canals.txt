@@ -1,5 +1,52 @@
 country_decisions = {
 
+	construct_ludwig_canal = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				AND = {
+					treasury = 20000
+					owns_or_vassal_of = 1971
+				}
+			}
+			has_discovered = 1971
+			1971 = {
+				range = ROOT
+				NOT = { 
+					has_great_project = { 
+						type = ludwig_canal 
+					}
+				}
+				NOT = { 
+					has_construction = ludwig_canal
+				}
+			}
+			adm_tech = 13
+		}
+		provinces_to_highlight = {
+			province_id = 1971
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { vassal_of = ROOT } }
+			}
+		}
+		allow = {
+			owns_or_vassal_of = 1971
+			is_subject = no			
+			adm_tech = 17
+			treasury = 10000
+		}
+		effect = {
+			1971 = {	# Beljamen
+				add_great_project = ludwig_canal
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	construct_don_and_volga_canal = {
 		major = yes
 		potential = {
@@ -207,6 +254,31 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	cancel_ludwig_canal = {
+		major = yes
+		potential = {
+			ai = no
+			owns_or_vassal_of = 1971
+			is_subject = no
+			1971 = {
+				has_construction = ludwig_canal
+			}
+		}
+		allow = {
+			1971 = {
+				has_construction = ludwig_canal
+			}
+		}
+		effect = {
+			1971 = { # Beljamen
+				cancel_construction = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
