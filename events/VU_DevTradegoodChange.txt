@@ -1,0 +1,25 @@
+# Change trade good to Gold when London has 30 dev
+
+province_event = {
+	id = DevTradeGoodChange.1
+	title = DevTradeGoodChange.EVTNAME1" #Needs localisation
+	desc = DevTradeGoodChange.EVTDESC1" #Needs localisation
+	picture = "CITY_DEVELOPMENT_eventPicture"
+	fire_only_once = yes
+
+	trigger = {
+		province_id = 236 #London is 236
+		development = 30
+		NOT = {
+			trade_goods = gold
+		}
+	}
+	
+	option = { # GOLD
+		name = "gold" #Localization
+		change_trade_goods = gold
+	}
+}
+
+		
+		
