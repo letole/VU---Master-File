@@ -52,7 +52,7 @@ age_of_discovery = {
 					controlled_by = owner
 					is_core = ROOT
 				}
-				amount = 5
+				amount = 10
 			}
 		}
 		obj_30_development_city = {
@@ -61,7 +61,7 @@ age_of_discovery = {
 				any_owned_province = {
 					is_core = ROOT
 					controlled_by = owner
-					development = 30
+					development = 50
 				}
 			}
 		}
@@ -153,9 +153,9 @@ age_of_discovery = {
 				}
 			}
 		}
-		ab_attack_bonus_in_capital_terrain = {
-			rule = {
-				attack_bonus_in_capital_terrain = yes
+		ab_better_trained_soldiers = {
+			modifier = {
+				shock_damage = 0.1
 			}
 			ai_will_do = {
 				factor = 10
@@ -362,6 +362,10 @@ age_of_reformation = {
 		ab_spain_tercio = {
 			allow = {
 				tag = SPA
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
 			}
 			modifier = {
 				shock_damage_received = -0.3
@@ -433,7 +437,7 @@ age_of_absolutism = {
 
 	objectives = {
 		obj_3_trade_companies = {
-			num_of_trade_companies = 3
+			num_of_trade_companies = 5
 		}
 		obj_universities = {
 			university = 5
@@ -520,7 +524,16 @@ age_of_absolutism = {
 		}
 		ab_france_fire_damage = {
 			allow = {
-				tag = FRA
+				OR = {
+					tag = FRA
+					tag = BFR
+					tag = FSR
+					tag = FSE
+					tag = NPF
+					tag = OFR
+					tag = RVF
+					tag = TFR
+				}
 			}
 			modifier = {
 				fire_damage = 0.2
@@ -738,9 +751,17 @@ age_of_enlightenment = {
 				OR={
 					tag = SPA
 					tag = CAS
+					tag = BSP
+					tag = SPB
+					tag = BBS
+					tag = CSP
 					OR = {
 						has_colonial_parent = CAS
 						has_colonial_parent = SPA
+						has_colonial_parent = BSP
+						has_colonial_parent = SPB
+						has_colonial_parent = BBS
+						has_colonial_parent = CSP
 					}
 				}
 			}
@@ -751,6 +772,10 @@ age_of_enlightenment = {
 							OR = {
 							has_colonial_parent = CAS
 							has_colonial_parent = SPA
+							has_colonial_parent = BSP
+							has_colonial_parent = SPB
+							has_colonial_parent = BBS
+							has_colonial_parent = CSP
 						}
 					}
 					add_splendor = 800
