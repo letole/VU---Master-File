@@ -347,6 +347,36 @@ spriteTypes = {
 
 
 
+
+	# NEW Abilities
+	spriteType = {
+		name = "GFX_ab_cavalry_armies"
+		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_free_war_taxes"
+		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_mercenary_discipline"
+		texturefile = "gfx/interface/ages/ab_mercenary_discipline.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_siege_blockades"
+		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_warscore_vs_religion"
+		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
+	}
+
+
+
+
 	#Age of Discovery
     #Abilities
 	spriteType = {
@@ -597,7 +627,7 @@ spriteTypes = {
 
 
 
-	#Age of change
+	#Age_of_change
     #Abilities
 	spriteType = {
 		name = "GFX_ab_reduced_industrial_costs"
