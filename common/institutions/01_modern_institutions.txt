@@ -32,7 +32,7 @@ imperialism = {
 	}
 	
 	can_start = {
-		is_year = 1836
+		is_year = 1800
 		
 		is_island = no
 		is_capital = yes
@@ -386,7 +386,7 @@ nationalism_institution = {
 	}
 
 	can_start = {
-		is_year = 1860
+		is_year = 1850
 
 		is_island = no		
 		is_in_capital_area = yes
