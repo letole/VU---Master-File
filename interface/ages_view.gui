@@ -33,13 +33,13 @@ guiTypes = {
 			iconType = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_1"
-				position = { x= 3 y = 7 }
+				position = { x= -1 y = 7 }
 			}
 			
 			iconType = {
 				name ="frame_r"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 484 y = 7 }
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 487 y = 7 }
 			}
 			
 			iconType = {
@@ -51,25 +51,25 @@ guiTypes = {
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_s"
-				position = { x= 487 y = 50 }
+				position = { x= 487 y = 55 }
 				frame = 2
 			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 79 }
+				position = { x= -15 y = 88 }
 				frame = 3
 			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= 487 y = 108 }
+				position = { x= 487 y = 121 }
 				frame = 4
 			}
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 136 }
+				position = { x= -15 y = 144 }
 				frame = 5
 			}
 		}
@@ -83,42 +83,42 @@ guiTypes = {
 			iconType = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_1"
-				position = { x= 3 y = 7 }
+				position = { x= -1 y = 7 }
 			}
 			
 			iconType = {
 				name ="frame_r"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 484 y = 7 }
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 487 y = 7 }
 			}
 			
 			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 31 }
 			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_l"
-				position = { x= 487 y = 43 }
+				position = { x= 487 y = 47 }
 				frame = 2
 			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 79 }
+				position = { x= -15 y = 88 }
 				frame = 3
 			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= 487 y = 108 }
+				position = { x= 487 y = 121 }
 				frame = 4
 			}
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 136 }
+				position = { x= -15 y = 144 }
 				frame = 5
 			}
 		}
@@ -131,39 +131,39 @@ guiTypes = {
 			iconType = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_1"
-				position = { x= 3 y = 7 }
+				position = { x= -1 y = 7 }
 			}
 			iconType = {
 				name ="frame_r"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 484 y = 7 }
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 487 y = 7 }
 			}
 			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 31 }
 			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= 487 y = 50 }
+				position = { x= 487 y = 55 }
 			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 71 }
+				position = { x= -30 y = 81 }
 				frame = 3
 			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= 487 y = 108 }
+				position = { x= 487 y = 121 }
 				frame = 4
 			}
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 136 }
+				position = { x= -15 y = 144 }
 				frame = 5
 			}
 		}
@@ -174,40 +174,40 @@ guiTypes = {
 			upsound = age_of_revolutions
 
 			iconType = {
-				name ="frame_r"
+				name ="frame"
 				spriteType = "GFX_age_indicator_1"
-				position = { x= 484 y = 7 }
+				position = { x= -1 y = 7 }
 			}
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 3 y = 7 }
+				name ="frame_r"
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 487 y = 7 }
 			}
 			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 31 }
 			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= 487 y = 50 }
+				position = { x= 487 y = 55 }
 			}				
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_of_absolutism_g"
-				position = { x= -15 y = 79 }
+				position = { x= -15 y = 88 }
 			}	
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_l"
-				position = { x= 487 y = 101 }
+				position = { x= 487 y = 114 }
 				frame = 4
 			}
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 136 }
+				position = { x= -15 y = 144 }
 				frame = 5
 			}
 		}
@@ -221,37 +221,37 @@ guiTypes = {
 			iconType = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_1"
-				position = { x= 484 y = 7 }
+				position = { x= -1 y = 7 }
 			}
 			iconType = {
-				name = "frame_r"
-				spriteType = "GFX_age_indicator_4"
-				position = { x = 0 y = 7 }
+				name ="frame_r"
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 487 y = 7 }
 			}
 			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 31 }
 			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= 487 y = 50 }
+				position = { x= 487 y = 55 }
 			}				
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_of_absolutism_g"
-				position = { x= -15 y = 79 }
+				position = { x= -15 y = 88 }
 			}	
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_of_revolutions_g"
-				position = { x= 487 y = 108 }
+				position = { x= 487 y = 121 }
 			}
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 136 }
+				position = { x= -30 y = 137 }
 				frame = 5
 			}
 		}

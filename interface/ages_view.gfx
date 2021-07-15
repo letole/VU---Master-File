@@ -30,21 +30,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/age_indicator_2.dds"
 	}
 
-	spriteType = {
-		name = "GFX_age_indicator_3"
-		texturefile = "gfx/interface/ages/age_indicator_3.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_indicator_4"
-		texturefile = "gfx/interface/ages/age_indicator_4.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_indicator_5"
-		texturefile = "gfx/interface/ages/age_indicator_5.dds"
-	}
-
     #Ages
 	spriteType = {
 		name = "GFX_age_of_discovery"
@@ -138,24 +123,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_icon_age_of_enlightenment_g"
-		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_g.dds"
-	}
-
-	spriteType = {
 		name = "GFX_icon_age_of_revolutions_g"
 		texturefile = "gfx/interface/ages/icon_age_of_revolutions_g.dds"
 	}
 
 	spriteType = {
-		name = "GFX_icon_age_of_industrialisation_g"
-		texturefile = "gfx/interface/ages/icon_age_of_industrialisation_g.dds"
+		name = "GFX_icon_age_of_change_g"
+		texturefile = "gfx/interface/ages/icon_age_of_change_g.dds"
 	}
 
-	spriteType = {
-		name = "GFX_icon_age_of_imperialism_g"
-		texturefile = "gfx/interface/ages/icon_age_of_imperialism_g.dds"
-	}
+
 
 	spriteType = {
 		name = "GFX_icon_splendor_tiny"
@@ -331,102 +308,6 @@ spriteTypes = {
 	}
 
 
-    #Age of Enlightenment
-	#Objectives
-	spriteType = {
-		name = "GFX_obj_enlightened_ruler"
-		texturefile = "gfx/interface/institutions/enlightenment.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_scientific_revolution"
-		texturefile = "gfx/interface/ages/obj_universities.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_land_reforms"
-		texturefile = "gfx/interface/ages/obj_100_development.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_merchant_fleet"
-		texturefile = "gfx/interface/institutions/global_trade.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_early_imperialism"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_great_minds"
-		texturefile = "gfx/interface/ages/obj_great_minds.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_early_industrialization"
-		texturefile = "gfx/interface/buildings/manufactory_textile.tga"
-	}
-
-
-    #Abilities
-	spriteType = {
-		name = "GFX_ab_population_census"
-		texturefile = "gfx/interface/ages/ab_population_census.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_meritocratic_promotion"
-		texturefile = "gfx/interface/ages/ab_meritocratic_promotion.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_classicism_art"
-		texturefile = "gfx/interface/ages/ab_classical_art.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_trade_liberalization"
-		texturefile = "gfx/interface/ages/ab_trade_liberalization.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_prestigious_court"
-		texturefile = "gfx/interface/ages/ab_prestigious_court.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_resettlement_policies"
-		texturefile = "gfx/interface/ages/ab_repopulation_policy.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_letters_of_marque"
-		texturefile = "gfx/interface/ages/ab_letters_of_marque.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_spa_coastal_forts"
-		texturefile = "gfx/interface/ages/ab_spa_coastal_forts.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_gb_redcoats"
-		texturefile = "gfx/interface/ages/ab_gb_redcoats.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_pru_military"
-		texturefile = "gfx/interface/ages/ab_pru_military.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_western_open"
-		texturefile = "gfx/interface/ages/ab_western_openess.tga"
-	}
-
-	
-
 	#Age of Revolutions
 	#Objectives
 	spriteType = {
@@ -463,36 +344,6 @@ spriteTypes = {
 		name = "GFX_obj_two_institutions"
 		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
 	}
-
-
-
-
-	# NEW Abilities
-	spriteType = {
-		name = "GFX_ab_cavalry_armies"
-		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_free_war_taxes"
-		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_mercenary_discipline"
-		texturefile = "gfx/interface/ages/ab_mercenary_discipline.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_siege_blockades"
-		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_warscore_vs_religion"
-		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
-	}
-
 
 
 
@@ -746,7 +597,7 @@ spriteTypes = {
 
 
 
-	#Age_of_change
+	#Age of change
     #Abilities
 	spriteType = {
 		name = "GFX_ab_reduced_industrial_costs"
