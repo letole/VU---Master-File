@@ -45,21 +45,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/age_indicator_5.dds"
 	}
 
-	spriteType = {
-		name = "GFX_age_indicator_6"
-		texturefile = "gfx/interface/ages/age_indicator_6.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_indicator_7"
-		texturefile = "gfx/interface/ages/age_indicator_7.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_indicator_8"
-		texturefile = "gfx/interface/ages/age_indicator_8.dds"
-	}
-
     #Ages
 	spriteType = {
 		name = "GFX_age_of_discovery"
@@ -77,28 +62,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_age_of_enlightenment"
-		texturefile = "gfx/interface/ages/age_of_enlightenment.dds"
-	}
-
-	spriteType = {
 		name = "GFX_age_of_revolutions"
 		texturefile = "gfx/interface/ages/age_of_revolutions.dds"
 	}
 
 	spriteType = {
-		name = "GFX_age_of_industrialisation"
-		texturefile = "gfx/interface/ages/age_of_industrialisation.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_of_imperialism"
-		texturefile = "gfx/interface/ages/age_of_imperialism.dds"
-	}
-
-	spriteType = {
-		name = "GFX_age_of_nationalism"
-		texturefile = "gfx/interface/ages/age_of_nationalism.dds"
+		name = "GFX_age_of_change"
+		texturefile = "gfx/interface/ages/age_of_change.dds"
 	}
 
 
@@ -143,13 +113,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_age_s"
 		texturefile = "gfx/interface/ages/icon_age_s.dds"
-		noOfFrames = 8
+		noOfFrames = 5
 	}
 
 	spriteType = {
 		name = "GFX_icon_age_l"
 		texturefile = "gfx/interface/ages/icon_age_l.dds"
-		noOfFrames = 8
+		noOfFrames = 5
 	}
 
 	spriteType = {
@@ -206,10 +176,6 @@ spriteTypes = {
 		name = "GFX_icon_religious"
 		texturefile = "gfx/interface/icon_religious.dds"
 	}
-
-
-
-
 
 
 
@@ -459,13 +425,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_western_openess.tga"
 	}
 
-	#New age of revolutions ability
-	spriteType = {
-		name = "GFX_ab_colonial_assemblies"
-		texturefile = "gfx/interface/ages/ab_colonial_assemblies.dds"
-	}
-
-
+	
 
 	#Age of Revolutions
 	#Objectives
@@ -569,8 +529,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ab_attack_bonus_in_capital_terrain"
-		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+		name = "GFX_ab_better_trained_soldiers"
+		texturefile = "gfx/interface/ages/ab_better_trained_soldiers.dds"
 	}
 
 	spriteType = {
@@ -786,7 +746,7 @@ spriteTypes = {
 
 
 
-	#Age_of_industrialisation
+	#Age_of_change
     #Abilities
 	spriteType = {
 		name = "GFX_ab_reduced_industrial_costs"
@@ -882,168 +842,3 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_emperor.dds"
 	}
 
-	#Age_of_imperialism
-  #Objectives
-	spriteType = {
-		name = "GFX_obj_scramble_for_africa"
-		texturefile = "gfx/interface/ages/obj_scramble_for_africa.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_the_indian_raj"
-		texturefile = "gfx/interface/ages/obj_the_indian_raj.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_the_boer_and_zulu_wars"
-		texturefile = "gfx/interface/ages/obj_the_boer_and_zulu_wars.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_fort_sevastopol"
-		texturefile = "gfx/interface/ages/obj_fort_sevastopol.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_opium_wars"
-		texturefile = "gfx/interface/ages/obj_opium_wars.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_gunboat_diplomacy"
-		texturefile = "gfx/interface/ages/obj_gunboat_diplomacy.dds"
-	}
-
-  #Age_of_imperialism
-  #Abilities
-	spriteType = {
-		name = "GFX_ab_african_claims"
-		texturefile = "gfx/interface/ages/ab_african_claims.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_east_india_trade"
-		texturefile = "gfx/interface/ages/ab_east_india_trade.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_african_colonization"
-		texturefile = "gfx/interface/ages/ab_african_colonization.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_border_forts"
-		texturefile = "gfx/interface/ages/ab_border_forts.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_naval_strength"
-		texturefile = "gfx/interface/ages/ab_naval_strength.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_naval_blockade"
-		texturefile = "gfx/interface/ages/ab_naval_blockade.dds"
-	}
-
-  #Age_of_nationalism
-  #Objectives
-	spriteType = {
-		name = "GFX_obj_ideas_of_unification"
-		texturefile = "gfx/interface/ages/obj_ideas_of_unification.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_simon_bolivar"
-		texturefile = "gfx/interface/ages/obj_simon_bolivar.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_the_american_dream"
-		texturefile = "gfx/interface/ages/obj_the_american_dream.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_monroe_doctrine"
-		texturefile = "gfx/interface/ages/obj_monroe_doctrine.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_far_eastern_ambitions"
-		texturefile = "gfx/interface/ages/obj_far_eastern_ambitions.dds"
-	}
-
-  #Age_of_nationalism
-  #Abilities
-	spriteType = {
-		name = "GFX_ab_nationalism"
-		texturefile = "gfx/interface/ages/ab_nationalism.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_latin_revolutionaries"
-		texturefile = "gfx/interface/ages/ab_latin_revolutionaries.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_westward_colonization"
-		texturefile = "gfx/interface/ages/ab_westward_colonization.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_us_ship_trade"
-		texturefile = "gfx/interface/ages/ab_us_ship_trade.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_japanese_siege_ability"
-		texturefile = "gfx/interface/ages/ab_japanese_siege_ability.dds"
-	}
-}
-
-#####Age_of_globalism
-#####objectives
-#
-#	spriteType = {
-#		name = "GFX_obj_globalism"
-#		texturefile = "gfx/interface/ages/obj_globalism.dds"
-#	}
-#
-#   #Age_of_globalism
-#   #abilities
-#
-#	spriteType = {
-#		name = "GFX_ab_naval_arms_race"
-#		texturefile = "gfx/interface/ages/ab_naval_arms_race.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_the_birth_of_socialism"
-#		texturefile = "gfx/interface/ages/ab_the_birth_of_socialism.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_the_central_powers"
-#		texturefile = "gfx/interface/ages/ab_the_central_powers.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_the_waning_caliphate"
-#		texturefile = "gfx/interface/ages/ab_the_waning_caliphate.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_arsenal_of_democracy"
-#		texturefile = "gfx/interface/ages/ab_arsenal_of_democracy.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_marxist_uprisings"
-#		texturefile = "gfx/interface/ages/ab_marxist_uprisings.dds"
-#	}
-#
-#	spriteType = {
-#		name = "GFX_ab_war_to_end_all_wars"
-#		texturefile = "gfx/interface/ages/ab_war_to_end_all_wars.dds"
-#	}
-#}
