@@ -584,7 +584,6 @@ age_of_absolutism = {
 	}
 }
 
-
 age_of_revolutions = {
 	start = 1710
 	
@@ -921,6 +920,57 @@ age_of_change = {
 			}
 		}
 
+		ab_resettlement_policies = {
+			rule = {
+				ignore_coring_distance = yes
+			}
+			modifier = {
+				colonists = 2
+				global_colonial_growth = 25
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_standing_armies = {
+			rule = {
+				force_march_free = yes
+			}
+			modifier = {
+				discipline = 0.05
+				artillery_bonus_vs_fort = 2
+				backrow_artillery_damage = 0.1
+				land_maintenance_modifier = -0.10
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_trade_liberalization = {
+			modifier = {
+				global_own_trade_power = -0.15
+				trade_efficiency = 0.2
+				liberty_desire = -5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_prestigious_court = {
+			modifier= {
+				advisor_pool = 2
+				advisor_cost = -0.15
+				prestige_decay = -0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+
 		# Special
 
 		ab_industrialisation_origins = {
@@ -929,8 +979,9 @@ age_of_change = {
 				tag = ENG
 			}
 			modifier = {
-				build_cost = -0.10
-				build_time = -0.10
+				build_cost = -0.15
+				build_time = -0.15
+				prestige = 1
 			}
 			ai_will_do = {
 				factor = 100
