@@ -778,6 +778,7 @@ age_of_revolutions = {
 	}
 }
 
+##new, made by letole
 age_of_change = {
 	start = 1810
 	
@@ -800,71 +801,22 @@ age_of_change = {
 	}
 	
 	objectives = {
-		# Has foreign heir, ruler, consort (and has given a foreign consort), or has at least 10 accepted cultures
+		# owns, or has a subject that owns one of the canals
 
-		obj_multiculturalism = {
-			OR = {
-				AND = {
-					ruler_is_foreigner = yes
-					has_foreign_heir = yes
-				}
-				AND = {
-					has_foreign_consort = yes
-					ruler_consort_marriage_length = 20
-				}
-				num_accepted_cultures = 10
-			}
-		}
-
-		# owns one of 3 great projects, or is currently building one of them (must also have at least 50 ducats income - might need balancing later)
-
-		obj_great_project_producer = {
-			OR = {
-				AND = {
-					any_owned_province = {
-						has_construction = great_project
-					}
-					monthly_income = 50
-				}
+		obj_canal_builders = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
 				OR = {
-					any_owned_province = {
-						has_great_project = { type = kiel_canal }
-						has_great_project = { type = suez_canal }
-						has_great_project = { type = panama_canal }
-					}
+					has_great_project = { type = kiel_canal }
+					has_great_project = { type = suez_canal }
+					has_great_project = { type = panama_canal }
+					has_great_project = { type = ludwig_canal }
+					has_great_project = { type = don_and_volga_canal }
 				}
 			}
 		}
-
-		# Owns at least 5 buildings of each manufactory-type building requiring a total of 30 manufatories total
-
-		obj_industrial_power = {
-			production_income_percentage = 0.4
-		}
-	
-
-
-		# Currently controls over 90% of an entire trade node, and has a total income of at least X from the node
-
-		obj_trade_ruler = {
-			home_trade_node = {
-				trade_share = {
-					country = ROOT
-					share = 90
-				}
-			}
-		}
-
-		# HRE size is 0
-
-		obj_dissolution_of_the_holy_roman_empire = {
-			NOT = {
-				hre_size = 1
-			}
-		}
-	
-	
-##new
+			
+			
 		obj_great_minds = {
 			OR={
 			artist = 3
@@ -895,6 +847,38 @@ age_of_change = {
 			quartermaster = 3
 			}
 		}
+		
+		obj_land_reforms = {
+			all_state_province = {
+			development = 15
+			}
+		}
+		
+		obj_industrial_power = {
+			production_income_percentage = 0.4
+		}
+		
+		obj_trade_ruler = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 90
+				}
+			}
+		}
+		obj_multiculturalism = {
+			num_accepted_cultures = 15
+		}
+		obj_great_empire = {
+			OR = {
+				AND = {
+				colony = 8
+				num_of_trade_companies = 8
+				}
+				colony = 15
+				num_of_trade_companies = 15
+			}
+		}
 	}
 
 
@@ -907,81 +891,12 @@ age_of_change = {
 				build_cost = -0.10
 				build_time = -0.10
 				production_efficiency = 0.05
-				administrative_efficiency = 0.01
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 
-		ab_increased_liberal_agitation = {
-			# +10% AE (this is a debuff) in exchange for -6 unrest and +10% tax increase
-			modifier = {
-				# Debuffs
-				ae_impact = 0.05
-				stability_cost_to_declare_war = 1
-				# Buffs
-				global_unrest = -2
-				global_tax_modifier = 0.10
-				interest = -1
-				core_creation = -0.1
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_standing_armies = {
-			allow = {
-				is_great_power = yes
-			}
-			rule = {
-				force_march_free = yes
-				ignore_coring_distance = yes
-				attack_bonus_in_capital_terrain = yes
-			}
-			modifier = {
-				# Army bonues
-				discipline = 0.01
-				land_morale = 0.01
-				army_tradition_decay = -0.01
-				# Arty bonuses
-				artillery_fire = 0.01
-				artillery_bonus_vs_fort = 0.1
-				backrow_artillery_damage = 0.01
-				# Army maintenence
-				land_maintenance_modifier = -0.10
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_naval_dominance = {
-			allow = {
-				is_great_power = yes
-			}
-			modifier = {
-				# Naval combat bonuses
-				naval_morale = 0.01
-				leader_naval_fire = 1
-				leader_naval_manuever = 1
-				leader_naval_shock = 1
-				# Navy bonues
-				navy_tradition = 1
-				navy_tradition_decay = -0.01
-				heavy_ship_cost = -0.1
-				global_naval_engagement_modifier = 0.01
-				# Navy maintenence
-				global_ship_cost = -0.5
-				global_ship_repair = 0.02
-				# Navy recruitment
-				global_ship_recruit_speed = -0.1
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
 
 		ab_subject_integration = {
 			# Liberty desire reductions and annexation/integration speed bonus
@@ -996,33 +911,6 @@ age_of_change = {
 			}
 		}
 
-		ab_military_leader = {
-			# Bonuses to the leader as a military general, + 2 all ruler stats?
-			effect = {
-				# Ruler
-				define_ruler_to_general = {
-					fire = 6
-					shock = 6
-					manuever = 6
-					siege = 4
-				}
-				# Advisor to Ruler
-				create_general = {
-					tradition = 100
-					add_fire = 6
-					add_shock = 6
-					add_manuever = 6
-					add_siege = 3
-					culture = ROOT
-				}
-			}
-			modifier = {
-				army_tradition_decay = -0.10
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
 
 		ab_embrace_national_pride = {
 			modifier = {
@@ -1085,9 +973,9 @@ age_of_change = {
 				tag = PAP
 			}
 			modifier = {
-				reduced_liberty_desire = 50
+				reduced_liberty_desire = 25
 				years_of_nationalism = -10
-				min_autonomy_in_territories = -0.08
+				min_autonomy_in_territories = -0.1
 			}
 			ai_will_do = {
 				factor = 100
