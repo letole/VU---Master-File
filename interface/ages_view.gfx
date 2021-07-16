@@ -633,30 +633,10 @@ spriteTypes = {
 		name = "GFX_ab_reduced_industrial_costs"
 		texturefile = "gfx/interface/ages/ab_reduced_industrial_costs.dds"
 	}
-
-	spriteType = {
-		name = "GFX_ab_increased_liberal_agitation"
-		texturefile = "gfx/interface/ages/ab_increased_liberal_agitation.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_standing_armies"
-		texturefile = "gfx/interface/ages/ab_standing_armies.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_naval_dominance"
-		texturefile = "gfx/interface/ages/ab_naval_dominance.dds"
-	}
-
+	
 	spriteType = {
 		name = "GFX_ab_subject_integration"
 		texturefile = "gfx/interface/ages/ab_subject_integration.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ab_military_leader"
-		texturefile = "gfx/interface/ages/ab_military_leader.dds"
 	}
 
 	spriteType = {
@@ -688,24 +668,10 @@ spriteTypes = {
 
 	# Objectives
 
-	spriteType = {
-		name = "GFX_obj_autonomy"
-		texturefile = "gfx/interface/ages/obj_90_absolutism.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_progressive"
-		texturefile = "gfx/interface/ages/obj_parliament.dds"
-	}
 
 	spriteType = {
 		name = "GFX_obj_multiculturalism"
 		texturefile = "gfx/interface/ages/obj_cultures_accepted.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_great_project_producer"
-		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
 	}
 
 	spriteType = {
@@ -716,10 +682,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_obj_trade_ruler"
 		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
-	}
-
-	spriteType = {
-		name = "GFX_obj_dissolution_of_the_holy_roman_empire"
-		texturefile = "gfx/interface/ages/obj_emperor.dds"
 	}
 
